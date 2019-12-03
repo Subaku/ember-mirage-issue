@@ -1,0 +1,15 @@
+<h3>Asset Locations</h3>
+<ul>
+  {{#each @model.assetLocations as |assetLocation|}}
+    <li>ID: {{assetLocation.id}}  Asset: {{assetLocation.asset.description}}</li>
+  {{/each}}
+</ul>
+
+<h3>Assets</h3>
+<ul>
+  {{#each @model.assets as |asset|}}
+    <li>ID: {{asset.id}}  Name: {{asset.description}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
